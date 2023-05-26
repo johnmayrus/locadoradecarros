@@ -17,6 +17,7 @@
             } else { //Erro de usuário.
                 return response()->json(['erro' => 'Usuário ou Senha Inválidos!'], 403);
             }
+
             //Retorna um Jason Web Token
             return 'login';
         }
